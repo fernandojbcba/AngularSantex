@@ -1,0 +1,7 @@
+<mat-button-toggle (click)="toggleLista()">Mostrar/Ocultar lista</mat-button-toggle>
+
+<div *ngIf="mostrarLista">
+  <ul>
+    <li *ngFor="let producto of lista">{{ producto.nombre }} - {{ producto.costo }}</li>
+  </ul>
+</div>
